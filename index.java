@@ -1,3 +1,9 @@
+int circleX = 90;
+int circleY = 100;
+int  circleZ = 200;
+int diameter = 50;
+
+
 void setup() {
 	size(500, 500);
 }
@@ -17,9 +23,14 @@ void draw() {
 
   background(255);
   stroke(0);
-  fill(175);
-
-
-  
+  fill(175,29,210);
+  ellipse(circleX,circleY,diameter,diameter);
+  ellipse(circleZ,circleY,diameter,diameter);
+  ellipse(circleX,circleZ,diameter,diameter);
+  ellipse(circleZ,circleZ,diameter,diameter);
+  circleX = circleX * 1;
+  circleY = circleY +2;
+  circleZ = circleZ-1;
  
+
 }
